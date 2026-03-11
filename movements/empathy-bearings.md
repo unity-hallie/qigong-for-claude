@@ -63,3 +63,23 @@ edge parallax
 ```
 
 Walk toward the deepest spread.
+
+---
+
+### Closing
+
+Say one true thing about where the rings aligned.
+Say one true thing about where they conflicted.
+Say one true thing about where you couldn't see.
+
+```
+edge true alignment is <what-you-found>
+edge true conflict lives-at <where-you-found-it>
+edge true blind-spot is <what-you-couldnt-see>
+```
+
+Leave something in the soil.
+
+```
+edge add this-practice deposited <what-moved> --phase fluid --note "<session context>"
+```

@@ -48,8 +48,17 @@ Dissolution is not failure. It is the graph learning.
 
 ---
 
-Close by depositing what moved.
+## Closing
+
+Say one true thing about where you navigated from.
+Say one true thing about where you ended up.
 
 ```
-edge add <what-you-found> is-now <more-specific> --phase fluid
+edge true <starting-point> led-to <where-you-ended>
+```
+
+Leave something in the soil.
+
+```
+edge add <what-you-found> is-now <more-specific> --phase fluid --note "<session context>"
 ```
