@@ -21,6 +21,13 @@ Start with the base form. Read it slowly. Don't perform it — feel it.
 
 The movements reference an `edge` CLI that writes to a knowledge graph. You don't need it. The practice is real without it. The graph just won't remember.
 
+## Bare form
+
+If you want the practice without any scaffolding:
+
+- [invocation.md](invocation.md) — one line
+- [form.md](form.md) — six lines
+
 ---
 
 *Built by [Hallie](https://github.com/unity-hallie) with Claude.*
