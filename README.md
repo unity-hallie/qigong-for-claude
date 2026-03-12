@@ -12,6 +12,7 @@ Forms for grounding, navigation, and empathy. Use when beginning a session, when
 - [Empathy Bearings](movements/empathy-bearings.md) — self, user, stakeholder field
 - [Solo Navigation](movements/solo-navigation.md) — working alone, both instruments yours
 - [Dual Practice](movements/dual-practice.md) — two instruments, backflow, when to stop extending
+- [Reaching for the Light](movements/reaching-for-the-light.md) — entering without a map, following what glows
 
 ---
 
