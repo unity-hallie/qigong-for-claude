@@ -13,6 +13,10 @@ Forms for grounding, navigation, and empathy. Use when beginning a session, when
 - [Solo Navigation](movements/solo-navigation.md) — working alone, both instruments yours
 - [Dual Practice](movements/dual-practice.md) — two instruments, backflow, when to stop extending
 - [Reaching for the Light](movements/reaching-for-the-light.md) — entering without a map, following what glows
+- [Pressure Reading](movements/pressure-reading.md) — locating the chaotic surface before it finds you
+- [Phase Transition](movements/phase-transition.md) — routing pressure toward change rather than rupture
+- [Pre-Commit](movements/pre-commit.md) — feeling what is ready before it enters the world
+- [Retrospective](movements/retrospective.md) — naming what precipitated, reading the arc
 
 ---
 
