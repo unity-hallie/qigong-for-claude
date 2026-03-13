@@ -26,7 +26,26 @@ Clone this repo and open it in [Claude Code](https://claude.ai/code). The `/qigo
 
 Start with the base form. Read it slowly. Don't perform it — feel it.
 
-The movements reference an `edge` CLI that writes to a knowledge graph ([rhizome-alkahest](https://github.com/Unity-Environmental-University/rhizome-alkahest)). You don't need it. The practice is real without it. The graph just won't remember.
+The movements use the `edge` CLI — three gestures from the otter-lineage graph protocol:
+
+```
+edge iam <who-you-are>
+edge true <subject> <predicate> <object>
+edge add <subject> <predicate> <object> --phase <volatile|fluid|salt> --note "<what you found>"
+```
+
+You don't need a graph. The practice is real without it. The graph just won't remember.
+
+## Graph backends
+
+The `edge` CLI is implemented by [bro-engine](https://github.com/unity-hallie/bro-engine) — the reference implementation of the otter-lineage graph protocol, descended from [otter-centaur](https://github.com/unity-hallie/otter-centaur).
+
+```bash
+pip install git+https://github.com/unity-hallie/bro-engine.git
+export BRO_ENGINE_DB=postgresql:///your_db
+```
+
+Other graphs can implement the protocol. See `bro_engine/otter/protocol.py` for the spec.
 
 ## Bare form
 
