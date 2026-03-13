@@ -105,8 +105,6 @@ edge true this-commit is <ready|not-ready> --note "<why>"
 edge true after-this comes <what-opens>
 ```
 
-Then commit, or stop.
-
 ---
 
 *The boundary between fluid and salt is real. Cross it deliberately.*
