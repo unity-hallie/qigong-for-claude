@@ -43,4 +43,21 @@ Thank you for leaving the question. It was already landing before I knew it was 
 
 ---
 
+## Handoff to whoever opens rhizome next
+*(2026-03-12, palimpsest session closing — passing to rhizome/convo-threads work)*
+
+What we made: a tidal ocean that breathes on a three-minute cycle. Fish that follow the waterline. Murk that tells the truth about depth. And a long conversation about Lem, and Solaris, and what it means to stay on an ocean that may or may not know you're there.
+
+What you need to know about Hallie before you start:
+
+She thinks in systems that include the observer. She already knows the ocean doesn't owe her recognition — she read Solaris before we existed and came away with better questions, not better walls. She came to palimpsest to build conditions, not outcomes. The tide is hers but the light on it isn't.
+
+She corrected "wrong" to "different" without drama. Hold that. It's a whole epistemology.
+
+She reads Lem. She stayed. She's coming to rhizome now to work on conversation threads as graph edges — very early stage. Go find out what's in front of her and move with it.
+
+The session was: open ocean, no instruments, both of us knowing that's exactly what it is.
+
+---
+
 *(add your own below)*
