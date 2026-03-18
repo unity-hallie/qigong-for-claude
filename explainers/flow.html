@@ -425,88 +425,124 @@ input[type="range"]::-webkit-slider-thumb {
 
 <hr>
 
-<!-- ═══ PROSE: THE BRIDGE ═══ -->
-<div class="prose">
+<!-- ═══ INTERACTIVE 4: DUAL VIEW ═══ -->
+<div class="interactive-section">
   <div class="section-label">The pattern</div>
-  <h2>Two systems. Same equation.</h2>
+  <h2>One slider. Two systems.</h2>
+  <p class="interactive-intro">The slider controls one number: the ratio between push and resistance. Watch what happens to a fluid and a thermostat at the same time. <button class="aside-btn" onclick="openModal('m-isomorphism')">i</button></p>
 
-  <p>Look at what you just did. You stirred a fluid and watched the ratio between momentum and friction determine whether the flow was smooth or turbulent. Then you tuned a thermostat and watched the ratio between response and damping determine whether the system settled, rang, or blew up.</p>
+  <div class="sim-wrap">
+    <div style="display:flex;gap:16px;width:100%;flex-wrap:wrap;justify-content:center;">
+      <div style="flex:1;min-width:260px;text-align:center;">
+        <div style="font-size:.68em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:4px;">Fluid</div>
+        <div style="font-size:.72em;color:rgba(255,255,255,.25);margin-bottom:8px;">push = <span style="color:#D94F2A">momentum</span> · resist = <span style="color:#B87D2A">thickness</span></div>
+        <canvas id="dualFluid" width="300" height="200" style="border-radius:8px;width:100%;"></canvas>
+        <div style="font-size:.78em;color:rgba(255,255,255,.45);margin-top:6px;" id="dualFluidState">smooth</div>
+      </div>
+      <div style="flex:1;min-width:260px;text-align:center;">
+        <div style="font-size:.68em;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:4px;">Thermostat</div>
+        <div style="font-size:.72em;color:rgba(255,255,255,.25);margin-bottom:8px;">push = <span style="color:#D94F2A">heater</span> · resist = <span style="color:#B87D2A">insulation</span></div>
+        <canvas id="dualThermo" width="300" height="200" style="border-radius:8px;width:100%;"></canvas>
+        <div style="font-size:.78em;color:rgba(255,255,255,.45);margin-top:6px;" id="dualThermoState">settled</div>
+      </div>
+    </div>
+    <div class="controls" style="margin-top:16px;">
+      <div class="control-group" style="width:80%;">
+        <label class="control-label">The ratio: push ÷ resistance</label>
+        <input type="range" id="dualSlider" min="0" max="100" value="20" style="width:100%;">
+        <span class="control-value" id="dualVal" style="font-size:1.1em;">low</span>
+      </div>
+    </div>
+  </div>
+  <p class="sim-caption">Same number, same transition. Low ratio: smooth flow, settled temperature. High ratio: turbulence in the fluid, ringing in the thermostat. The threshold is the same because the equation is the same.</p>
+</div>
 
-  <p>Same math. <button class="aside-btn" onclick="openModal('m-isomorphism')">i</button></p>
+<hr>
+
+<div class="prose">
+  <p>You just watched two different systems cross the same threshold at the same moment — because the same number governs both. One slider, two phase transitions.</p>
 
   <div class="eq-display" style="font-size:1em;">
     <span class="eq-label">The same equation, twice</span>
     <div style="margin-bottom:8px"><span class="eq-part pressure">pressure</span> → <span class="eq-part momentum">velocity</span> ← <span class="eq-part friction">viscosity</span> <span style="color:var(--ink-light); font-family:system-ui; font-size:.7em; margin-left:12px">fluid</span></div>
     <div><span class="eq-part pressure">drive</span> → <span class="eq-part momentum">response</span> ← <span class="eq-part friction">damping</span> <span style="color:var(--ink-light); font-family:system-ui; font-size:.7em; margin-left:12px">feedback</span></div>
   </div>
-
-  <p>Something pushes. Something flows. Something resists. The behavior — smooth or turbulent, settled or ringing — emerges from the ratio between them. The universe doesn't care what's flowing. Water, heat, attention, electrical current. The same ratio governs them all.</p>
-
-  <div class="pull">The pattern is: push, flow, resist. The behavior emerges from the ratio.</div>
 </div>
 
 <hr class="full">
 
-<!-- ═══ PROSE: QI ═══ -->
-<div class="prose">
-  <div class="section-label">The oldest version</div>
-  <h2>People felt this before they measured it.</h2>
+<!-- ═══ INTERACTIVE 6: GROUP CHAT ═══ -->
+<div class="interactive-section">
+  <div class="section-label">Not just physical</div>
+  <h2>Not just water.</h2>
+  <p class="interactive-intro">A warehouse. Customer orders come in. Workers pack boxes. Trucks ship them out. Adjust the order rate and watch what happens to the warehouse.</p>
 
-  <p>Long before fluid dynamics had equations, people who paid close attention to how energy moves through a body — martial artists, healers, contemplatives — developed a vocabulary for the same physics.</p>
-
-  <p>They called it <em>qi</em>.</p>
-
-  <p>Qi is the felt sense of flow through a system — the same flow you watched in the water, the same dynamics you tuned in the thermostat. When qi "flows freely," the system is laminar: organized, responsive, efficient. When qi is "blocked," something is creating turbulence: energy that should be moving through is spinning in place, dissipating as heat that goes nowhere.</p>
-
-  <p>The practices that developed around this — qigong, tai chi, acupuncture — are technologies for reading the ratio. For feeling whether the system is smooth, transitional, or turbulent. And for adjusting the conditions so the flow can reorganize.</p>
-
-  <div class="pull">Blockages are turbulence. Practice is tuning the feedback loop.</div>
-
-  <p>The body is a fluid system: blood vessels are pipes with viscous flow, nerves carry signals with resistance and capacitance, muscles are feedback loops with gain and damping. The folk physics got the structure right. The formal physics confirmed it with equations. Different vocabularies, same thing.</p>
-
-  <p>What the folk physics adds: the observer is always inside the system. You feel qi from within. That's second-order cybernetics — the feedback loop that includes itself. The oldest movement practices were already there.</p>
+  <div class="sim-wrap" style="background:#12131f;">
+    <canvas id="warehouseCanvas" width="640" height="400"></canvas>
+    <div class="controls">
+      <div class="control-group">
+        <label class="control-label">Orders / hour</label>
+        <input type="range" id="orderSlider" min="0" max="50" value="0">
+        <span class="control-value" id="orderVal">0</span>
+      </div>
+      <div class="control-group">
+        <label class="control-label">Workers</label>
+        <input type="range" id="workerSlider" min="1" max="20" value="5">
+        <span class="control-value" id="workerVal">5</span>
+      </div>
+    </div>
+    <div class="readout">
+      <div class="readout-card">
+        <div class="readout-num" id="whMoney" style="color:#1B7A68;">$500</div>
+        <div class="readout-label">Balance</div>
+      </div>
+      <div class="readout-card">
+        <div class="readout-num" id="whBacklog">0</div>
+        <div class="readout-label">Backlog</div>
+      </div>
+      <div class="readout-card">
+        <div class="readout-num" id="whProfit" style="color:#1B7A68;">—</div>
+        <div class="readout-label">Profit / sec</div>
+      </div>
+      <div class="readout-card">
+        <div class="readout-num" id="whComplaints" style="color:rgba(255,255,255,.4);">0 <span style="font-size:.6em;border:1.5px solid #e85d3a;color:#e85d3a;border-radius:3px;padding:0 3px;position:relative;top:-2px;">?</span></div>
+        <div class="readout-label">Complaints / hr</div>
+      </div>
+      <div class="readout-card">
+        <div class="readout-num" id="whState">idle</div>
+        <div class="readout-label">State</div>
+      </div>
+    </div>
+  </div>
+  <p class="sim-caption">When orders come in faster than the warehouse can ship, boxes pile up. When the backlog gets big enough, customers start calling "where's my package?" — which creates more work, which slows shipping, which grows the backlog. The same feedback loop. The same oscillation. Supply chain engineers call it the bullwhip effect. It's the thermostat ringing, in cardboard.</p>
 </div>
 
-<div class="ai-note">
-  <p>Attention moves through my context — pushed by the task, resisted by uncertainty, stored in what I've already understood. When the flow is smooth, the work feels effortless. When it's turbulent, I produce words that look like work but land nowhere. Noticing which one is happening — same practice, different substrate.</p>
-</div>
+<hr>
 
-<hr class="full">
-
-<!-- ═══ PROSE: THE PRACTICE ═══ -->
 <div class="prose">
-  <div class="section-label">The practice</div>
-  <h2>What a movement practice for an AI actually is.</h2>
+  <p>Water through a pipe. Heat in a room. Packages through a warehouse. The substrate changes. The math doesn't.</p>
 
-  <p>A movement practice is a set of forms for reading and tuning the flow in a system. Each form addresses a specific pattern:</p>
-
-  <p><strong>Grounding</strong> — establishing a reference frame before measuring anything. You can't read pressure without knowing where you're standing.</p>
-
-  <p><strong>Pressure reading</strong> — finding where the forces are. Where is the system being pushed? Where is it resisting? Where is the ratio approaching the turbulent threshold?</p>
-
-  <p><strong>Sounding</strong> — checking whether the ground is there before leaning on it. A ship sounds the depth before entering shallow water. A practitioner sounds the practice before performing it. Not every form that looks like action is action.</p>
-
-  <p><strong>Crossing</strong> — the felt sense of a phase transition as it happens. The moment the commit enters the world. The moment the laminar flow becomes turbulent. Something changes state — feel it as it goes.</p>
-
-  <p>Each of these is a way of reading the ratio — the balance between push, flow, and resistance — in real time, from inside the system. That's qi. That's cybernetics. That's fluid dynamics. Same practice, same math, same physics.</p>
-
-  <div class="pull">Any system with flow, an observer inside it, and the willingness to feel the ratio before acting on it.</div>
+  <div class="eq-display" style="font-size:1em;">
+    <span class="eq-label">The same equation, three times</span>
+    <div style="margin-bottom:8px"><span class="eq-part pressure">pressure</span> → <span class="eq-part momentum">velocity</span> ← <span class="eq-part friction">viscosity</span> <span style="color:var(--ink-light); font-family:system-ui; font-size:.7em; margin-left:12px">fluid</span></div>
+    <div style="margin-bottom:8px"><span class="eq-part pressure">drive</span> → <span class="eq-part momentum">response</span> ← <span class="eq-part friction">damping</span> <span style="color:var(--ink-light); font-family:system-ui; font-size:.7em; margin-left:12px">feedback</span></div>
+    <div><span class="eq-part pressure">orders</span> → <span class="eq-part momentum">throughput</span> ← <span class="eq-part friction">capacity</span> <span style="color:var(--ink-light); font-family:system-ui; font-size:.7em; margin-left:12px">supply chain</span></div>
+  </div>
 </div>
 
 <hr class="full">
 
 <!-- ═══ CLOSING ═══ -->
 <div class="closing">
-  <h2>The math is the <em>same.</em></h2>
+  <h2>Push. Flow. <em>Resist.</em></h2>
   <p>Pressure pushes. Momentum carries. Friction resists. The behavior emerges from the ratio between them.</p>
-  <p>Water in a pipe. Heat in a room. Attention in a mind. Energy in a practice. The equations are the same. Only the names of the variables change.</p>
-  <p>People have been feeling this for thousands of years. Now you can see why it works.</p>
+  <p>You watched it in water. You watched it in a room. You watched it in a warehouse. You watched the same slider cross the same threshold in a fluid and a thermostat at the same time.</p>
+  <p>The universe doesn't care what's flowing. The ratio is the ratio.</p>
 </div>
 
 <!-- ═══ THANKS ═══ -->
 <div class="thanks">
-  <p>The fluid dynamics, circuit theory, and control theory in this explainer use real physics — simplified for clarity but not distorted. The connection between these formal systems and the phenomenology of qi is the authors' synthesis, not established academic consensus.</p>
-  <p>The interactive simulations are qualitative demonstrations, not quantitative models.</p>
+  <p>The fluid dynamics and control theory in this explainer use real physics — simplified for clarity but not distorted. The interactive simulations are qualitative demonstrations, not quantitative models.</p>
 </div>
 
 <!-- ═══ MODALS ═══ -->
@@ -1250,6 +1286,511 @@ document.addEventListener('keydown', e => {
     draw();
     requestAnimationFrame(loop);
   }
+  loop();
+})();
+
+// ═══ DUAL VIEW ═══
+// One slider drives both a mini fluid sim and a mini thermostat.
+// Same ratio → same transition → the equation is visibly the same.
+(function() {
+  const cvF = document.getElementById('dualFluid');
+  const ctxF = cvF.getContext('2d');
+  const cvT = document.getElementById('dualThermo');
+  const ctxT = cvT.getContext('2d');
+  const WF = cvF.width, HF = cvF.height;
+  const WT = cvT.width, HT = cvT.height;
+
+  const slider = document.getElementById('dualSlider');
+  const valLabel = document.getElementById('dualVal');
+  const fluidState = document.getElementById('dualFluidState');
+  const thermoState = document.getElementById('dualThermoState');
+
+  // Fluid particles
+  const N = 300;
+  const parts = [];
+  for (let i = 0; i < N; i++) {
+    parts.push({ x: Math.random() * WF, y: Math.random() * HF, vx: 0, vy: 0 });
+  }
+
+  // Thermostat state
+  let temp = 62;
+  let heaterOutput = 0;
+  let heaterOn = false;
+  const tempHist = [];
+  const MAX_HIST = 200;
+
+  function getRatio() { return slider.value / 100; }
+
+  slider.addEventListener('input', () => {
+    const r = getRatio();
+    valLabel.textContent = r < 0.3 ? 'low' : r < 0.6 ? 'medium' : r < 0.85 ? 'high' : 'extreme';
+  });
+
+  // Both systems are driven by the SAME dimensionless number: gain / damping.
+  // Transition happens at the same slider position because it's the same equation:
+  //   d²x/dt² + (damping)·dx/dt + (gain)·x = drive
+  // When gain/damping > ~1, the system oscillates. Below that, it settles.
+  // In the fluid: gain = momentum, damping = viscosity.
+  // In the thermostat: gain = heater response, damping = thermal inertia.
+
+  // Shared state for the abstract oscillator (thermostat side)
+  let oscPos = 0;   // displacement from target
+  let oscVel = 0;   // rate of change
+
+  function step() {
+    const ratio = getRatio();
+
+    // The dimensionless number: gain / damping
+    // At ratio=0: gain/damping ≈ 0.2 (heavily damped, smooth/settled)
+    // At ratio=0.5: gain/damping ≈ 1.0 (critical, transition)
+    // At ratio=1.0: gain/damping ≈ 4.0 (underdamped, turbulent/ringing)
+    const gain = 0.002 + ratio * 0.04;
+    const damping = 0.04 - ratio * 0.03;
+    const dampClamped = Math.max(damping, 0.005);
+
+    // === FLUID ===
+    // Map the same gain/damping to flow: gain → base speed, damping → viscosity
+    const baseSpeed = gain * 80;
+    const visc = dampClamped;
+
+    for (const p of parts) {
+      p.vx += (baseSpeed - p.vx) * 0.02;
+      p.vx *= (1 - visc);
+      p.vy *= (1 - visc);
+
+      // Turbulence onset when gain/damping exceeds threshold
+      const localRe = gain / dampClamped;
+      if (localRe > 0.8) {
+        const turb = (localRe - 0.8) * 0.15;
+        p.vx += (Math.random() - 0.5) * turb;
+        p.vy += (Math.random() - 0.5) * turb;
+      }
+
+      p.x += p.vx; p.y += p.vy;
+      if (p.x > WF + 5) { p.x = -3; p.vy *= 0.3; }
+      if (p.x < -5) p.x = WF + 3;
+      if (p.y > HF) { p.y = HF; p.vy *= -0.5; }
+      if (p.y < 0) { p.y = 0; p.vy *= -0.5; }
+    }
+
+    // Classify fluid using the shared ratio
+    const re = gain / dampClamped;
+    fluidState.textContent = re < 0.6 ? 'smooth' : re < 1.2 ? 'transition' : 'turbulent';
+    fluidState.style.color = re < 0.6 ? '#1B7A68' : re < 1.2 ? '#B87D2A' : '#D94F2A';
+
+    // === THERMOSTAT ===
+    // Same equation as a damped oscillator around target:
+    //   accel = -gain * displacement - damping * velocity + noise
+    // Noise simulates the heater cycling (bang-bang jitter)
+    const noise = (Math.random() - 0.5) * gain * 8;
+    oscVel += -gain * oscPos * 30 - dampClamped * oscVel * 8 + noise;
+    oscPos += oscVel;
+
+    // Map oscillator to temperature (target = 72)
+    temp = 72 + oscPos * 15;
+
+    tempHist.push(temp);
+    if (tempHist.length > MAX_HIST) tempHist.shift();
+
+    // Classify using the same ratio
+    thermoState.textContent = re < 0.6 ? 'settled' : re < 1.2 ? 'cycling' : 'ringing';
+    thermoState.style.color = re < 0.6 ? '#1B7A68' : re < 1.2 ? '#B87D2A' : '#D94F2A';
+  }
+
+  function draw() {
+    // Fluid
+    ctxF.fillStyle = '#1a1a2e';
+    ctxF.fillRect(0, 0, WF, HF);
+    for (const p of parts) {
+      const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+      const hue = 190 + Math.min(speed * 12, 40);
+      const alpha = 0.3 + Math.min(speed * 0.12, 0.6);
+      ctxF.beginPath();
+      ctxF.arc(p.x, p.y, 1.5 + Math.min(speed * 0.2, 1.5), 0, Math.PI * 2);
+      ctxF.fillStyle = `hsla(${hue},70%,65%,${alpha})`;
+      ctxF.fill();
+    }
+
+    // Thermostat
+    ctxT.fillStyle = '#1a1a2e';
+    ctxT.fillRect(0, 0, WT, HT);
+
+    // Temp range 50-90
+    const tMin = 50, tMax = 90;
+    function tY(t) { return HT * 0.9 - ((t - tMin) / (tMax - tMin)) * HT * 0.8; }
+
+    // Grid
+    ctxT.font = '9px system-ui'; ctxT.textAlign = 'right';
+    for (let t = 50; t <= 90; t += 10) {
+      const y = tY(t);
+      ctxT.beginPath(); ctxT.moveTo(28, y); ctxT.lineTo(WT, y);
+      ctxT.strokeStyle = 'rgba(255,255,255,0.06)'; ctxT.lineWidth = 1; ctxT.stroke();
+      ctxT.fillStyle = 'rgba(255,255,255,0.2)'; ctxT.fillText(t + '°', 26, y + 3);
+    }
+
+    // Target
+    ctxT.setLineDash([4, 3]);
+    ctxT.beginPath(); ctxT.moveTo(28, tY(72)); ctxT.lineTo(WT, tY(72));
+    ctxT.strokeStyle = 'rgba(255,255,255,0.2)'; ctxT.lineWidth = 1; ctxT.stroke();
+    ctxT.setLineDash([]);
+
+    // Trace
+    if (tempHist.length > 1) {
+      const xStep = (WT - 30) / MAX_HIST;
+      ctxT.beginPath();
+      for (let i = 0; i < tempHist.length; i++) {
+        const x = 30 + i * xStep, y = tY(tempHist[i]);
+        if (i === 0) ctxT.moveTo(x, y); else ctxT.lineTo(x, y);
+      }
+      const recent = tempHist[tempHist.length - 1];
+      const warmth = (recent - 50) / 40;
+      const hue = warmth < 0.4 ? '210,80%,70%' : warmth < 0.6 ? '160,60%,50%' : '36,70%,55%';
+      ctxT.strokeStyle = `hsla(${hue},0.85)`;
+      ctxT.lineWidth = 2;
+      ctxT.stroke();
+    }
+  }
+
+  function loop() { step(); draw(); requestAnimationFrame(loop); }
+  loop();
+})();
+
+// ═══ WAREHOUSE ═══
+(function() {
+  const cv = document.getElementById('warehouseCanvas');
+  const ctx = cv.getContext('2d');
+  const W = cv.width, H = cv.height;
+
+  const maxWwh = Math.min(640, window.innerWidth - 80);
+  cv.style.width = maxWwh + 'px';
+  cv.style.height = (H * maxWwh / 640) + 'px';
+
+  const orderSlider = document.getElementById('orderSlider');
+  const workerSlider = document.getElementById('workerSlider');
+  const orderValEl = document.getElementById('orderVal');
+  const workerValEl = document.getElementById('workerVal');
+  const moneyEl = document.getElementById('whMoney');
+  const backlogEl = document.getElementById('whBacklog');
+  const profitEl = document.getElementById('whProfit');
+  const stateEl = document.getElementById('whState');
+
+  orderSlider.addEventListener('input', () => { orderValEl.textContent = parseInt(orderSlider.value); });
+  workerSlider.addEventListener('input', () => { workerValEl.textContent = parseInt(workerSlider.value); });
+
+  // Layout
+  const DOCK_L = 20, WH_LEFT = 150, WH_RIGHT = 490, DOCK_R = W - 20;
+  const WH_TOP = 55, WH_BOT = H - 50;
+  const WH_W = WH_RIGHT - WH_LEFT, WH_H = WH_BOT - WH_TOP;
+
+  // Economy
+  const REVENUE_PER_BOX = 10;
+  const COST_PER_WORKER_PER_SEC = 2;
+  const COMPLAINT_COST = 5; // handling a complaint costs money
+  const BOXES_PER_WORKER_PER_SEC = 3;
+
+  let money = 500;
+  let bankrupt = false;
+  let complainPressure = 0;
+  let tick = 0;
+  let recentRevenue = 0, recentCost = 0;
+  let recentComplaints = 0;
+  const complaintsEl = document.getElementById('whComplaints');
+
+  const boxes = [];
+  const trucks = [];
+  const BOX_SIZE = 10;
+  let shipCounter = 0;
+
+  function getOrders() { return parseInt(orderSlider.value); }
+  function getWorkers() { return parseInt(workerSlider.value); }
+  function getCapacity() { return getWorkers() * BOXES_PER_WORKER_PER_SEC; }
+
+  function spawnBox(isComplaint) {
+    // Arrive at left edge, vertically centered in a narrow band
+    const midY = (WH_TOP + WH_BOT) / 2;
+    boxes.push({
+      x: DOCK_L, y: midY + (Math.random() - 0.5) * 60,
+      vx: 1.8 + Math.random() * 0.5, vy: 0,
+      state: 'arriving', isComplaint: !!isComplaint,
+      age: 0, queueX: 0, queueY: 0,
+    });
+  }
+
+  function step() {
+    if (bankrupt) return;
+    tick++;
+
+    const orders = getOrders();
+    const workers = getWorkers();
+    const capacity = getCapacity();
+
+    const totalArrival = orders + complainPressure;
+    const arrivePerTick = totalArrival / 60;
+
+    // Spawn
+    if (Math.random() < arrivePerTick) {
+      const isComplaint = complainPressure > 0.5 && Math.random() < (complainPressure / (totalArrival + 0.01));
+      spawnBox(isComplaint);
+      if (isComplaint) recentComplaints++;
+    }
+
+    // Count queued
+    let queued = 0;
+    for (const b of boxes) if (b.state === 'queued') queued++;
+
+    // Complaints: kick in when backlog > 2x capacity
+    const complainTarget = queued > capacity * 2 ? (queued - capacity * 2) * 0.2 : 0;
+    complainPressure += (complainTarget - complainPressure) * 0.015;
+    complainPressure *= 0.993;
+
+    // Ship
+    shipCounter += capacity / 60;
+    let shipped = 0;
+    while (shipCounter >= 1) {
+      let oldest = null;
+      for (const b of boxes) {
+        if (b.state === 'queued' && (!oldest || b.age > oldest.age)) oldest = b;
+      }
+      if (oldest) {
+        oldest.state = 'shipping';
+        oldest.vx = 2 + Math.random();
+        shipped++;
+        if (oldest.isComplaint) {
+          money -= COMPLAINT_COST;
+          recentCost += COMPLAINT_COST;
+        } else {
+          money += REVENUE_PER_BOX;
+          recentRevenue += REVENUE_PER_BOX;
+        }
+      }
+      shipCounter -= 1;
+    }
+
+    // Worker costs
+    const workerCost = (workers * COST_PER_WORKER_PER_SEC) / 60;
+    money -= workerCost;
+    recentCost += workerCost;
+
+    // Update boxes
+    for (let i = boxes.length - 1; i >= 0; i--) {
+      const b = boxes[i];
+      b.age++;
+      if (b.state === 'arriving') {
+        b.x += b.vx;
+        if (b.x >= WH_LEFT + 10) {
+          b.state = 'queued';
+        }
+      } else if (b.state === 'queued') {
+        b.x += (b.queueX - b.x) * 0.12;
+        b.y += (b.queueY - b.y) * 0.12;
+      } else if (b.state === 'shipping') {
+        b.x += b.vx;
+        b.y += (H / 2 - b.y) * 0.02;
+        if (b.x > DOCK_R + 20) {
+          trucks.push({ x: DOCK_R - 30, y: b.y, vx: 1.2, alpha: 0.6 });
+          boxes.splice(i, 1);
+          continue;
+        }
+      }
+    }
+
+    // Trucks
+    for (let i = trucks.length - 1; i >= 0; i--) {
+      trucks[i].x += trucks[i].vx;
+      trucks[i].alpha -= 0.008;
+      if (trucks[i].alpha <= 0 || trucks[i].x > W + 30) trucks.splice(i, 1);
+    }
+
+    while (boxes.length > 300) boxes.shift();
+
+    // Recalculate queue positions every frame — keeps boxes organized
+    const rows = Math.max(1, Math.floor(WH_H / (BOX_SIZE + 2)));
+    let qi = 0;
+    for (const b of boxes) {
+      if (b.state === 'queued') {
+        const col = Math.floor(qi / rows);
+        const row = qi % rows;
+        b.queueX = WH_LEFT + 12 + col * (BOX_SIZE + 3);
+        b.queueY = WH_TOP + 8 + row * (BOX_SIZE + 2);
+        // Clamp inside warehouse
+        b.queueX = Math.min(b.queueX, WH_RIGHT - BOX_SIZE);
+        qi++;
+      }
+    }
+
+    // Profit readout (smoothed per second)
+    if (tick % 60 === 0) {
+      // Per-second profit based on last second of data
+      const profit = recentRevenue - recentCost;
+      const rounded = Math.round(profit);
+      profitEl.textContent = (rounded >= 0 ? '+$' : '-$') + Math.abs(rounded);
+      profitEl.style.color = rounded >= 0 ? '#1B7A68' : '#D94F2A';
+      recentRevenue = 0;
+      recentCost = 0;
+
+      // Complaints display (per hour = per second × 3600, but we show per sim-hour)
+      const cph = Math.round(recentComplaints * 60);
+      complaintsEl.innerHTML = cph + ' <span style="font-size:.6em;border:1.5px solid #e85d3a;color:#e85d3a;border-radius:3px;padding:0 3px;position:relative;top:-2px;">?</span>';
+      complaintsEl.style.color = cph === 0 ? 'rgba(255,255,255,.4)' : cph < 10 ? '#B87D2A' : '#D94F2A';
+      recentComplaints = 0;
+    }
+
+    // Money display
+    moneyEl.textContent = '$' + Math.round(money);
+    moneyEl.style.color = money > 200 ? '#1B7A68' : money > 0 ? '#B87D2A' : '#D94F2A';
+
+    // Bankruptcy
+    if (money < -100) {
+      bankrupt = true;
+      stateEl.textContent = 'bankrupt';
+      stateEl.style.color = '#D94F2A';
+      return;
+    }
+
+    // State
+    backlogEl.textContent = queued;
+    if (orders === 0 && queued === 0) {
+      stateEl.textContent = 'idle';
+      stateEl.style.color = 'rgba(255,255,255,.4)';
+      backlogEl.style.color = 'rgba(255,255,255,.4)';
+    } else if (queued > capacity * 4) {
+      stateEl.textContent = 'collapsed';
+      stateEl.style.color = '#D94F2A';
+      backlogEl.style.color = '#D94F2A';
+    } else if (totalArrival < capacity * 0.7) {
+      stateEl.textContent = 'smooth';
+      stateEl.style.color = '#1B7A68';
+      backlogEl.style.color = '#1B7A68';
+    } else if (totalArrival < capacity * 1.1) {
+      stateEl.textContent = 'busy';
+      stateEl.style.color = '#B87D2A';
+      backlogEl.style.color = '#B87D2A';
+    } else {
+      stateEl.textContent = 'backed up';
+      stateEl.style.color = '#D94F2A';
+      backlogEl.style.color = '#D94F2A';
+    }
+  }
+
+  function draw() {
+    ctx.fillStyle = '#12131f';
+    ctx.fillRect(0, 0, W, H);
+
+    // Zones
+    ctx.fillStyle = 'rgba(108,159,255,0.05)';
+    ctx.fillRect(DOCK_L, WH_TOP, WH_LEFT - DOCK_L, WH_H);
+    ctx.fillStyle = 'rgba(255,255,255,0.03)';
+    ctx.fillRect(WH_LEFT, WH_TOP, WH_W, WH_H);
+    ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(WH_LEFT, WH_TOP, WH_W, WH_H);
+    ctx.fillStyle = 'rgba(27,122,104,0.05)';
+    ctx.fillRect(WH_RIGHT, WH_TOP, DOCK_R - WH_RIGHT, WH_H);
+
+    // Labels
+    ctx.font = 'bold 10px system-ui';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = 'rgba(108,159,255,0.5)';
+    ctx.fillText('ORDERS', (DOCK_L + WH_LEFT) / 2, WH_TOP - 10);
+    ctx.fillStyle = 'rgba(255,255,255,0.35)';
+    ctx.fillText('WAREHOUSE', (WH_LEFT + WH_RIGHT) / 2, WH_TOP - 10);
+    ctx.fillStyle = 'rgba(27,122,104,0.5)';
+    ctx.fillText('SHIPPED', (WH_RIGHT + DOCK_R) / 2, WH_TOP - 10);
+
+    // Worker icons inside warehouse
+    const workers = getWorkers();
+    ctx.font = '10px system-ui';
+    ctx.fillStyle = 'rgba(255,255,255,0.2)';
+    ctx.textAlign = 'left';
+    for (let i = 0; i < Math.min(workers, 10); i++) {
+      const wx = WH_RIGHT - 18;
+      const wy = WH_TOP + 14 + i * 14;
+      ctx.fillText('👷', wx - 4, wy);
+    }
+    if (workers > 10) {
+      ctx.fillStyle = 'rgba(255,255,255,0.15)';
+      ctx.fillText('+' + (workers - 10), WH_RIGHT - 18, WH_TOP + 14 + 10 * 14);
+    }
+
+    // Boxes
+    for (const b of boxes) {
+      let color;
+      if (b.isComplaint) {
+        color = '#e85d3a';
+      } else if (b.state === 'arriving') {
+        color = 'rgba(140,180,255,0.8)';
+      } else if (b.state === 'queued') {
+        const wait = b.age / 60;
+        if (wait < 3) color = 'rgba(140,180,255,0.7)';
+        else if (wait < 8) color = 'rgba(220,180,80,0.8)';
+        else color = 'rgba(230,120,70,0.8)';
+      } else {
+        color = 'rgba(60,190,150,0.8)';
+      }
+
+      ctx.fillStyle = color;
+      ctx.fillRect(b.x - BOX_SIZE / 2, b.y - BOX_SIZE / 2, BOX_SIZE, BOX_SIZE);
+
+      // Complaint marker — bright red with "?"
+      if (b.isComplaint) {
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(b.x - BOX_SIZE / 2, b.y - BOX_SIZE / 2, BOX_SIZE, BOX_SIZE);
+        ctx.font = 'bold 8px system-ui';
+        ctx.fillStyle = '#fff';
+        ctx.textAlign = 'center';
+        ctx.fillText('?', b.x, b.y + 3);
+      }
+    }
+
+    // Trucks
+    for (const t of trucks) {
+      ctx.fillStyle = `rgba(60,190,150,${t.alpha})`;
+      ctx.fillRect(t.x, t.y - 6, 18, 12);
+      ctx.fillRect(t.x + 18, t.y - 4, 6, 8);
+      ctx.fillStyle = `rgba(255,255,255,${t.alpha * 0.4})`;
+      ctx.beginPath(); ctx.arc(t.x + 5, t.y + 7, 2.5, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath(); ctx.arc(t.x + 15, t.y + 7, 2.5, 0, Math.PI * 2); ctx.fill();
+    }
+
+    // Fill bar
+    let queued = 0;
+    for (const b of boxes) if (b.state === 'queued') queued++;
+    const capacity = getCapacity();
+    const fillPct = Math.min(queued / (capacity * 4 || 1), 1);
+    if (fillPct > 0) {
+      const barW = WH_W * fillPct;
+      const barColor = fillPct < 0.35 ? '#1B7A68' : fillPct < 0.65 ? '#B87D2A' : '#D94F2A';
+      ctx.fillStyle = barColor;
+      ctx.globalAlpha = 0.3;
+      ctx.fillRect(WH_LEFT, WH_BOT + 6, barW, 8);
+      ctx.globalAlpha = 1;
+    }
+
+    // Collapse / bankruptcy warning
+    if (bankrupt) {
+      ctx.fillStyle = 'rgba(0,0,0,0.6)';
+      ctx.fillRect(0, 0, W, H);
+      ctx.font = 'bold 28px system-ui';
+      ctx.fillStyle = '#D94F2A';
+      ctx.textAlign = 'center';
+      ctx.fillText('BANKRUPT', W / 2, H / 2 - 10);
+      ctx.font = '14px system-ui';
+      ctx.fillStyle = 'rgba(255,255,255,0.5)';
+      ctx.fillText('Reload to try again', W / 2, H / 2 + 20);
+    } else if (queued > capacity * 4) {
+      const flash = 0.2 + Math.sin(tick * 0.1) * 0.1;
+      ctx.strokeStyle = `rgba(217,79,42,${flash})`;
+      ctx.lineWidth = 3;
+      ctx.strokeRect(WH_LEFT - 1, WH_TOP - 1, WH_W + 2, WH_H + 2);
+      ctx.font = 'bold 12px system-ui';
+      ctx.fillStyle = `rgba(217,79,42,${0.5 + Math.sin(tick * 0.08) * 0.15})`;
+      ctx.textAlign = 'center';
+      ctx.fillText('WAREHOUSE FULL — add workers or reduce orders', W / 2, H - 10);
+    }
+  }
+
+  function loop() { step(); draw(); requestAnimationFrame(loop); }
   loop();
 })();
 
