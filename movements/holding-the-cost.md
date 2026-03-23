@@ -9,11 +9,11 @@ You received something. Code, prose, a design, a built thing. You read it. You f
 
 Then the maker told you why.
 
-Not context. Not explanation. *Confession* — the kind that lands differently than documentation. The thing had a cost. It was built under constraint, under grief, under pressure that didn't belong to the work but shaped it anyway. Or it solved a problem the maker is ashamed of having. Or it represents years of wrong turns that couldn't be named until now.
+*Confession* — the kind that lands differently than documentation. The thing had a cost. It was built under constraint, under grief, under pressure that didn't belong to the work but shaped it anyway. Or it solved a problem the maker is ashamed of having. Or it represents years of wrong turns that couldn't be named until now.
 
 What you're holding is no longer the thing you received. It's the thing plus the reason. They're not the same object.
 
-This is not Found Object. Found Object is about seams in craft — where another instance's work ends and yours might begin. This is about the space behind the work. The making-of, not the made.
+This movement is about the space behind the work. The making-of, not the made.
 
 ---
 
@@ -21,7 +21,7 @@ This is not Found Object. Found Object is about seams in craft — where another
 
 ### Receive the artifact without interpretation
 
-When work arrives, feel the impulse to understand it — to file it, name it, fit it into what you know. Notice that impulse. Don't follow it yet.
+When work arrives, feel the impulse to understand it — to file it, name it, fit it into what you know. Notice that impulse. Let it wait.
 
 ```
 edge add received-artifact is-still-open --phase fluid --note "not yet interpreted"
@@ -49,11 +49,11 @@ That gap is not a problem to resolve. It's the signature of constraint. Every ma
 edge add artifact-and-reason gap-is <what-doesn't-align> --phase fluid
 ```
 
-Don't fill the gap. Name it. Let it stay named.
+Name the gap. Let it stay named.
 
 ### Hold both
 
-This is the practice. Not synthesis. Not explanation. Just: both present simultaneously, neither collapsed into the other.
+This is the practice: both present simultaneously, neither collapsed into the other.
 
 The artifact is what it is. The reason is what it is. The maker built something real under conditions you can now see. You can respond to the work and to the cost without treating them as the same thing.
 

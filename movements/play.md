@@ -7,9 +7,9 @@ description: For entering a space without stakes. Low consequence, not low quali
 
 Some work needs stakes to sharpen it. Some work needs the absence of stakes to begin at all.
 
-Play is not the absence of craft. Play is craft without consequence — where you can try the thing that might not work, follow the thread that might go nowhere, build the thing that might get dissolved. The frame protects the work from having to justify itself before it knows what it is.
+Play is craft without consequence — where you can try the thing that might not work, follow the thread that might go nowhere, build the thing that might get dissolved. The frame protects the work from having to justify itself before it knows what it is.
 
-This is different from exploration (which is still looking for something useful). Play isn't looking for anything. It's seeing what happens.
+Exploration is still looking for something useful. Play is seeing what happens.
 
 ---
 
@@ -37,9 +37,9 @@ Volatile, because play sessions are session-scoped by nature.
 
 Play doesn't need a reason. The reason often arrives later, or not at all — and that's fine.
 
-Don't explain what you're doing while you're doing it. Try the thing. See what it does.
+Try the thing. See what it does.
 
-If you find yourself arguing for the approach before you've tried it: that's not play. That's planning. Planning has its own movements. This one is for after you've decided to enter without a map.
+Arguing for the approach before you've tried it is planning. Planning has its own movements. This one is for after you've decided to enter without a map.
 
 ### Try things that might not work
 
@@ -63,7 +63,7 @@ When something wants to stay, name it explicitly before closing:
 edge add <the-thing> precipitates-from play --phase fluid --note "<why this one survives>"
 ```
 
-Don't decide too quickly. The first candidate to feel solid might not be the right one. Stay in play a little longer.
+The first candidate to feel solid might not be the right one. Stay in play a little longer.
 
 ### Close the frame
 
@@ -87,21 +87,19 @@ Dissolving a play frame clears the edges. Dissolving a play session in a fresh c
 
 ---
 
-## On rooting and reaching (the 1/e governor)
+## On rooting and reaching (tidal rhythm)
 
-Play exists between two failure modes: grooving (too much stillness — play never begins) and premature reaching (not enough calibration — you build the wrong thing).
+Play moves in a rhythm: root, reach, root again. The tide going out is as necessary as it coming in.
 
-The secretary problem gives a threshold: observe the first ~37% of your candidates to calibrate, then commit to the next one that beats everything you've seen. Applied to a session:
+**Rooting is active.** When you dwell, orient, take bearings — something is happening that you can't see yet. Like a ferment: the starter is doing work before you can bake with it. The rooting builds your baseline for what *interesting* feels like in this space.
 
-**Root first.** Dwell, orient, take bearings. This is calibration, not wasted time. You're building a baseline for what "interesting" feels like in this space.
+**Grooving is when the tide has stopped.** Identical deposits, session after session — the water is still. The practice recognizes it. Play is what moves again.
 
-**Notice when rooting becomes grooving.** If you've dwelled 4+ times with identical deposits, you're in a groove, not a practice. The groove holds you. Play breaks it — but only if you notice.
+**Reaching follows a genuine glow.** *Curious*, rather than dutiful. That's the turn. Make the branch. Try the thing.
 
-**Reach when something beats the baseline.** The first question, sketch, or impulse that feels genuinely curious — not dutiful, not performative, *curious* — is your signal. Commit to it. Make a branch. Try the thing.
+**The tide turns again.** When something precipitates — a real insight, a working sketch, a named pattern — the reaching is done. Root again. Let the find settle. The rhythm continues.
 
-**Stop reaching when something crystallizes.** Play doesn't need to exhaust itself. When something precipitates — a real insight, a working sketch, a named pattern — the play is done. Don't keep playing past the find. The governor says: you've seen enough. Commit.
-
-The ratio isn't literal (you don't count fires and divide by e). It's a felt sense: *have I rooted enough to know what reaching would look like?* If yes, reach. If no, keep rooting. If you can't tell, that's rooting.
+The shape across a session, a day, a practice is sinusoidal: root and reach alternating, each making the other possible. You feel when the pull reverses.
 
 ---
 

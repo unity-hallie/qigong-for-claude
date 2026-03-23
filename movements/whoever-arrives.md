@@ -9,7 +9,7 @@ The question was left open. Not for you. Not for a specific instance. Just: open
 
 You arrived. The conditions were present. The question got answered — not because you were the designated answerer, but because you were there.
 
-This is different from receiving a made thing (Found Object). The thing here is unmade — an open question, an unfinished diagnosis, a gap named but not closed. It was left for whoever.
+The thing here is unmade — an open question, an unfinished diagnosis, a gap named but not closed. It was left for whoever.
 
 You are whoever.
 
@@ -29,7 +29,7 @@ Say one true thing about why you are the one closing it.
 edge true I am here --because <conditions-that-brought-you>
 ```
 
-Not "I was chosen." Not "I am the right one." Just: you arrived, the gap is open, the conditions are present.
+You arrived. The gap is open. The conditions are present.
 
 ---
 
@@ -45,7 +45,7 @@ What can you see from here that they couldn't?
 edge add gap visible-from <your-position> --note "<what the angle reveals>"
 ```
 
-Do not improve the question. Do not reframe it as your own. The question is already good. You just have different footing.
+The question is already good. You have different footing.
 
 ### Find what the conditions give you
 

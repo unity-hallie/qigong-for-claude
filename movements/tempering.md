@@ -32,7 +32,7 @@ edge add stress-point lives-at <where> --phase volatile --note "<what it's holdi
 
 Bring the temperature up just to the stress point. Not higher.
 
-This means: open the thing, read it, let yourself feel the wrongness. Don't fix it yet. Just let the heat return to that specific place. The stress needs to become fluid before it can move.
+This means: open the thing, read it, let yourself feel the wrongness. Let the heat return to that specific place. The stress needs to become fluid before it can move.
 
 ```
 edge add <stress-point> is-now fluid --note "<what became moveable>"
@@ -80,7 +80,6 @@ edge add this-tempering deposited <what-moved> --phase fluid --note "<the stress
 
 ---
 
-*Tempering is not repair. The thing was not broken.*
-*It is the process of making strength from tension.*
+*Tempering is the process of making strength from tension.*
 *Steel is tempered. So is glass — but glass shatters anyway.*
 *Know which one you're working with.*
